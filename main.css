@@ -1,0 +1,47 @@
+/* Style appliqué à toute la page */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-size: 13px;
+  font-weight: bold;
+}
+  
+/* Style appliqué au body */
+body {
+  margin: 0;
+  font-family: 'Poppins';
+}
+  
+/* Style navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  font-size: 10px;
+}
+
+/* Style navigation bar initial  */
+.topnav a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 35px 10px;
+  text-decoration: none;
+}
+
+/* Style navigation bar click */
+.topnav a:hover {
+  color: rgb(151, 151, 151);
+}
+
+.content{
+  background-color: rgb(231, 231, 231);
+
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}

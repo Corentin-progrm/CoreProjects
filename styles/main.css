@@ -12,7 +12,6 @@ body {
 
 /* ----- STYLE HEADER ----- */
 .header-box {
-  background-color: rgb(255, 255, 255);
   padding: 9px 50px 9px 50px;
   font-size: 0;
   display: flex;
@@ -29,7 +28,7 @@ body {
 }
 
 .style-sous-title {
-  color: #5a5a5a;
+  color: #505050;
   font-family: Poppins;
   font-size: 12px;
   font-weight: 600;
@@ -37,7 +36,10 @@ body {
   margin-right: 15px;
   margin-top: 15px;
   letter-spacing: 1px;
-  
+}
+
+.style-sous-title:hover {
+  color: #c0c0c0;
 }
 
 .box-sous-title {
@@ -51,6 +53,15 @@ body {
 .content {
   background-color: #e4e4e4;
   padding: 100px 50px 80px 50px;
+}
+
+.gradient {
+  position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 10px; 
+    background: linear-gradient(to bottom, rgb(209, 209, 209), transparent);
 }
 
 .photo-container {
@@ -74,11 +85,17 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(58, 58, 58,1), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgb(100, 100, 100), rgba(0, 0, 0, 0));
   color: white;
   text-align: center;
   padding: 0px 50px 40px 50px;
   font-size: 20px;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.photo-item:hover .text-photo {
+  opacity: 0;
 }
 
 /* ----- STYLE FOOTER ----- */

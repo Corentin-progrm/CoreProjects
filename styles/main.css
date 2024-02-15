@@ -48,6 +48,10 @@ body {
   color: #c0c0c0;
 }
 
+.header-box .title:hover {
+  color: #000000;
+}
+
 .header-box .icon {
   display: none;
 }
@@ -81,64 +85,72 @@ body {
 }
 
 .photo-item {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   float: right;
-  margin: 10px;
+  margin: 20px;
   margin-bottom: 50px;
-  width: 25%;
+  border-radius: 10px;
 }
   
 #img-container {
   display: flex; 
   justify-content: center;
+  padding-right: auto;
+  padding-left: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 @media only screen and (max-width: 900px) {
   /* For mobile phones: */
-  #photo1, #photo2, #photo3{
-    width: 100%;
+  .photo-item {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #img-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
-  
+
 .contains-border {
-
-  
   border-color: #e4e4e4;
-
-
   border-style: solid;
-
   border-width: 1px;
-
 }
-
 
 .text-photo {
   position: absolute;
-  margin-bottom: 5px;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgb(100, 100, 100), rgba(0, 0, 0, 0));
+  width: 100%;
+  background: linear-gradient(to top, rgba(73, 73, 73, 0.582)1%, transparent);;
   color: white;
   text-align: center;
-  padding: 0px 50px 40px 50px;
-  font-size: 20px;
-  opacity: 1;
+  padding: 20px;
+  box-sizing: border-box;
   transition: opacity 0.7s ease;
+  font-size: 1.2vw;
+  letter-spacing: 0.5px;
 }
 
 .photo-item:hover .text-photo {
-  opacity: 0;
+  opacity: 0; 
 }
+
+@media screen and (max-width: 900px) {
+  .text-photo {
+    font-size: 20px; 
+  }
+}
+
 
 
 /* ----- STYLE FOOTER ----- */
 .footer {
+
   background-color: #000000;
   padding: 30px;
 }

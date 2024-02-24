@@ -150,9 +150,18 @@ body {
 
 /* ----- STYLE FOOTER ----- */
 .footer {
-
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
-  padding: 30px;
+  padding: 20px;
+  margin: 0;
+}
+
+#icon_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer h1 {
@@ -165,4 +174,19 @@ body {
   font-family: Poppins;
   font-weight: 10;
   text-align: center;
+}
+
+.fa {
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  margin: 0px;
+  background-color: #000000;
+  color: white;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
 }

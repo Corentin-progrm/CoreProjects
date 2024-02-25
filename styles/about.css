@@ -5,7 +5,6 @@
     display: block;
     color: black;
     text-align: left;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
     letter-spacing: 1px;
@@ -14,12 +13,14 @@
     margin-right: 10%;
 }
 
+/* ----- STYLE TEXT ----- */
 .about-content {
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5px;
+    margin-top: 10px;
+    
 }
 
 .about-content p {
@@ -34,13 +35,9 @@
     border-radius: 8px;
 }     
 
-@media screen and (max-width: 600px) {
-    .about-content {
-        flex-direction: column; /* Change la direction de la disposition en colonnes */
-        align-items: flex-start; /* Aligne les éléments sur la gauche */
-    }
-
-    .text-content {
-        margin-bottom: 0; /* Supprime la marge en bas */
-    }
+.line {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-bottom: 20px;
 }
